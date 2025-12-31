@@ -1,9 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentBot", "InvestmentBot\InvestmentBot.csproj", "{B4E75585-C38B-41D4-B884-4A000FC20F69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentBot.Worker", "Src\InvestmentBot.Worker\InvestmentBot.Worker.csproj", "{B4E75585-C38B-41D4-B884-4A000FC20F69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentBot.Application", "InvestmentBot.Application\InvestmentBot.Application.csproj", "{3BE76E71-0822-42AF-BAFE-D36F69CC9BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentBot.Domain", "InvestmentBot.Domain\InvestmentBot.Domain.csproj", "{BE31AF03-8E73-4563-A4EA-8489F8BBD14D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentBot.ExternalServices", "InvestmentBot.ExternalServices\InvestmentBot.ExternalServices.csproj", "{297F429A-3429-4A3D-9749-98ED3CC33E78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +28,27 @@ Global
 		{B4E75585-C38B-41D4-B884-4A000FC20F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4E75585-C38B-41D4-B884-4A000FC20F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4E75585-C38B-41D4-B884-4A000FC20F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE76E71-0822-42AF-BAFE-D36F69CC9BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE76E71-0822-42AF-BAFE-D36F69CC9BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE76E71-0822-42AF-BAFE-D36F69CC9BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE76E71-0822-42AF-BAFE-D36F69CC9BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE31AF03-8E73-4563-A4EA-8489F8BBD14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE31AF03-8E73-4563-A4EA-8489F8BBD14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE31AF03-8E73-4563-A4EA-8489F8BBD14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE31AF03-8E73-4563-A4EA-8489F8BBD14D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{297F429A-3429-4A3D-9749-98ED3CC33E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297F429A-3429-4A3D-9749-98ED3CC33E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297F429A-3429-4A3D-9749-98ED3CC33E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297F429A-3429-4A3D-9749-98ED3CC33E78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B4E75585-C38B-41D4-B884-4A000FC20F69} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3BE76E71-0822-42AF-BAFE-D36F69CC9BCF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{BE31AF03-8E73-4563-A4EA-8489F8BBD14D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{297F429A-3429-4A3D-9749-98ED3CC33E78} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5EDF3E44-9F88-4EAB-A7D9-FB30D4E8BDAA}
