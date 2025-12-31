@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentBot.Worker", "Src
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentBot.Application", "InvestmentBot.Application\InvestmentBot.Application.csproj", "{3BE76E71-0822-42AF-BAFE-D36F69CC9BCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentBot.Application", "Src\InvestmentBot.Application\InvestmentBot.Application.csproj", "{3BE76E71-0822-42AF-BAFE-D36F69CC9BCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentBot.Domain", "InvestmentBot.Domain\InvestmentBot.Domain.csproj", "{BE31AF03-8E73-4563-A4EA-8489F8BBD14D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentBot.Domain", "Src\InvestmentBot.Domain\InvestmentBot.Domain.csproj", "{BE31AF03-8E73-4563-A4EA-8489F8BBD14D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentBot.ExternalServices", "InvestmentBot.ExternalServices\InvestmentBot.ExternalServices.csproj", "{297F429A-3429-4A3D-9749-98ED3CC33E78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestmentBot.ExternalServices", "Src\InvestmentBot.ExternalServices\InvestmentBot.ExternalServices.csproj", "{297F429A-3429-4A3D-9749-98ED3CC33E78}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
