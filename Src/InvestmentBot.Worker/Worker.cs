@@ -1,4 +1,4 @@
-namespace InvestmentBot
+namespace InvestmentBot.Worker
 {
     public class Worker : BackgroundService
     {
