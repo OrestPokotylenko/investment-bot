@@ -1,0 +1,24 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: investmentbot.db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  worker:
+    build:
+      context: .
+      dockerfile: Src/InvestmentBot.Worker/Dockerfile
+    container_name: investmentbot.worker
+    depends_on:
+      - db
+    environment:
+      DOTNET_ENVIRONMENT: ${DOTNET_ENVIRONMENT}
+volumes:
+  db_data:
