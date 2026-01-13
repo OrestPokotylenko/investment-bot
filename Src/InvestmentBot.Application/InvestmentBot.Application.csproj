@@ -1,13 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\InvestmentBot.Domain\InvestmentBot.Domain.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Options" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\InvestmentBot.Domain\InvestmentBot.Domain.csproj" />
+	  <ProjectReference Include="..\InvestmentBot.ExternalServices\InvestmentBot.ExternalServices.csproj" />
+	</ItemGroup>
 
 </Project>

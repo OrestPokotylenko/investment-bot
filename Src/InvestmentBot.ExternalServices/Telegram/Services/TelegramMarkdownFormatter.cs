@@ -2,7 +2,7 @@
 using InvestmentBot.Domain.Report;
 using InvestmentBot.Domain.Report.Enums;
 
-namespace InvestmentBot.Application.Telegram;
+namespace InvestmentBot.ExternalServices.Telegram.Services;
 
 public static class TelegramHtmlFormatter
 {

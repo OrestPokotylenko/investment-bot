@@ -1,3 +1,5 @@
+using InvestmentBot.Application.DI;
+using InvestmentBot.ExternalServices.SEC.DI;
 using InvestmentBot.ExternalServices.Telegram.DI;
 using Serilog;
 
@@ -23,7 +25,9 @@ public class Program
 
         builder.Services
             .AddHostedService<Worker>()
-            .AddTelegramModule(builder.Configuration);
+            .AddTelegramModule(builder.Configuration)
+            .AddSecModule(builder.Configuration)
+            .AddApplicationModule(builder.Configuration);
 
         var host = builder.Build();
         host.Run();

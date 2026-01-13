@@ -1,5 +1,4 @@
-﻿using InvestmentBot.Application.Telegram;
-using InvestmentBot.Domain.Report;
+﻿using InvestmentBot.Domain.Report;
 using InvestmentBot.ExternalServices.Telegram.Options;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;

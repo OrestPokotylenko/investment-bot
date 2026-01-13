@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\InvestmentBot.Application\InvestmentBot.Application.csproj" />
     <ProjectReference Include="..\InvestmentBot.Domain\InvestmentBot.Domain.csproj" />
     <ProjectReference Include="..\InvestmentBot.ExternalServices\InvestmentBot.ExternalServices.csproj" />
   </ItemGroup>
